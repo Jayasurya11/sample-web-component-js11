@@ -1,6 +1,5 @@
 {
   "name": "sample-web-component-js11",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "types": "src/webComponents/web-components.d.ts",
