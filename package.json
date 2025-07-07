@@ -1,11 +1,12 @@
 {
   "name": "sample-web-component-js11",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "types": "src/webComponents/web-components.d.ts",
+  "types": "dist/web-components.d.ts",
+  "main": "dist/web-components.es.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && copy src\\webComponents\\web-components.d.ts dist\\web-components.d.ts",
     "lint": "eslint .",
     "preview": "vite preview"
   },
