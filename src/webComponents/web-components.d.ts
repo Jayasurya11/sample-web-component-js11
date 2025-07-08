@@ -1,7 +1,12 @@
+import * as React from "react";
+
 declare global {
-  namespace JSX {
+  namespace React.JSX {
     interface IntrinsicElements {
-      "alert-component": {
+      "alert-component": React.DetailedHTMLProps<
+        React.HtmlHTMLAttributes<HTMLElement>,
+        HTMLElement
+      > & {
         title: string;
         subTitle: string;
         backgroundColor: string;
@@ -9,4 +14,3 @@ declare global {
     }
   }
 }
-export {};
