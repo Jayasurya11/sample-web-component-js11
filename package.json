@@ -1,6 +1,6 @@
 {
   "name": "sample-web-component-js11",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "types": "dist/web-components.d.ts",
   "main": "dist/web-components.umd.js",
