@@ -5,12 +5,16 @@
   "types": "dist/web-components.d.ts",
   "main": "dist/web-components.umd.js",
   "module": "dist/web-components.es.js",
+  "description": "Sample description",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "postbuild": "copy src\\webComponents\\web-components.d.ts dist\\web-components.d.ts",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "bin": {
+    "sample-web-component-js11": "./cli.js"
   },
   "dependencies": {
     "react": "^19.1.0",
