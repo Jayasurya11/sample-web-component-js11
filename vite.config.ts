@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import pkg from "./package.json";
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +15,10 @@ export default defineConfig({
     rollupOptions: {
       output: { globals: { react: "React", "react-dom": "ReactDOM" } },
     },
-    cssCodeSplit:false
+    cssCodeSplit: false,
+  },
+  define: {
+    __PACKAGE_VERSION__: JSON.stringify(pkg.version),
+    __PACKAGE_NAME__: JSON.stringify(pkg.name),
   },
 });
