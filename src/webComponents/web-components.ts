@@ -1,5 +1,5 @@
 import "../components/register-alert";
-
+console.log(" Assigning version info to windows");
 const version = __PACKAGE_VERSION__;
 const name = __PACKAGE_NAME__;
 interface PackageInfo {
